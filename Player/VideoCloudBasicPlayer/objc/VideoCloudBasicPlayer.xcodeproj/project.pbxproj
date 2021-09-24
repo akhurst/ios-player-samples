@@ -13,10 +13,13 @@
 		4907B1DF19D9DACF002EA892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4907B1DD19D9DACF002EA892 /* Main.storyboard */; };
 		4907B1E119D9DACF002EA892 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4907B1E019D9DACF002EA892 /* Images.xcassets */; };
 		4907B1E419D9DACF002EA892 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4907B1E219D9DACF002EA892 /* LaunchScreen.xib */; };
+		DB1FB1C16F58DF3555D9AE78 /* Pods_VideoCloudBasicPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66F6D3D42AD0DAF6AAF6125 /* Pods_VideoCloudBasicPlayer.framework */; };
 		E984FCAF24252CBE00085367 /* NowPlayingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E984FCAE24252CBE00085367 /* NowPlayingHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1849BADD9808D62C11A6C09A /* Pods-VideoCloudBasicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCloudBasicPlayer.debug.xcconfig"; path = "Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		1AD9A76F4590DC60BD55E01B /* Pods-VideoCloudBasicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoCloudBasicPlayer.release.xcconfig"; path = "Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		4907B1D019D9DACF002EA892 /* VideoCloudBasicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCloudBasicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4907B1D419D9DACF002EA892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4907B1D519D9DACF002EA892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		4907B1DE19D9DACF002EA892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4907B1E019D9DACF002EA892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4907B1E319D9DACF002EA892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A66F6D3D42AD0DAF6AAF6125 /* Pods_VideoCloudBasicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoCloudBasicPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E962EEBA25DC2544007ABEFF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		E962EEBB25DC2544007ABEFF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E962EEBC25DC254A007ABEFF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1FB1C16F58DF3555D9AE78 /* Pods_VideoCloudBasicPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,8 @@
 			children = (
 				4907B1D219D9DACF002EA892 /* VideoCloudBasicPlayer */,
 				4907B1D119D9DACF002EA892 /* Products */,
+				D173C3412F6BBD9406AF189D /* Pods */,
+				98E818B8B681C44E635497B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +107,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		98E818B8B681C44E635497B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A66F6D3D42AD0DAF6AAF6125 /* Pods_VideoCloudBasicPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D173C3412F6BBD9406AF189D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1849BADD9808D62C11A6C09A /* Pods-VideoCloudBasicPlayer.debug.xcconfig */,
+				1AD9A76F4590DC60BD55E01B /* Pods-VideoCloudBasicPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4907B1F319D9DACF002EA892 /* Build configuration list for PBXNativeTarget "VideoCloudBasicPlayer" */;
 			buildPhases = (
+				D85599EE9EDA2036A2A1F457 /* [CP] Check Pods Manifest.lock */,
 				4907B1CC19D9DACF002EA892 /* Sources */,
 				4907B1CD19D9DACF002EA892 /* Frameworks */,
 				4907B1CE19D9DACF002EA892 /* Resources */,
+				5A7CA97F577B99BD0F2AADFD /* [CP] Embed Pods Frameworks */,
+				5C7E2ACFE02DE109D9041912 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +205,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A7CA97F577B99BD0F2AADFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7E2ACFE02DE109D9041912 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoCloudBasicPlayer/Pods-VideoCloudBasicPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D85599EE9EDA2036A2A1F457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoCloudBasicPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4907B1CC19D9DACF002EA892 /* Sources */ = {
@@ -335,6 +422,7 @@
 		};
 		4907B1F419D9DACF002EA892 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1849BADD9808D62C11A6C09A /* Pods-VideoCloudBasicPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -353,6 +441,7 @@
 		};
 		4907B1F519D9DACF002EA892 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD9A76F4590DC60BD55E01B /* Pods-VideoCloudBasicPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
