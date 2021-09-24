@@ -9,9 +9,9 @@ import AVKit
 import UIKit
 import BrightcovePlayerSDK
 
-let kViewControllerPlaybackServicePolicyKey = "BCpkADawqM0T8lW3nMChuAbrcunBBHmh4YkNl5e6ZrKQwPiK_Y83RAOF4DP5tyBF_ONBVgrEjqW6fbV0nKRuHvjRU3E8jdT9WMTOXfJODoPML6NUDCYTwTHxtNlr5YdyGYaCPLhMUZ3Xu61L"
-let kViewControllerAccountID = "5434391461001"
-let kViewControllerVideoID = "6140448705001"
+let kViewControllerPlaybackServicePolicyKey = "BCpkADawqM2g20ETofxJDhAFvPG1VmaH518NJcDxe9hot9kRYZuetXbFd68kL9SxRISaxAifI8OpG_5k8Fhpo-JVrxa1Tru0P1w5MbPRhXpeEEF8HdRQWJpVmPNT0PUkKlF-kTanqnTf2NHA"
+let kViewControllerAccountID = "6250470670001"
+let kViewControllerVideoID = "6263986007001"
 
 class ViewController: UIViewController {
     
@@ -25,6 +25,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var muteButton: UIButton!
     
     required init?(coder aDecoder: NSCoder) {
+        BCOVGlobalConfiguration.sharedConfig().setValue([
+            "privateUser":"allenhurst+5@gmail.com",
+            "privateApplication":""
+        ], forKey: "privateSessionAnalytics")
         playbackController = (sharedSDKManager?.createPlaybackController())!
         
         super.init(coder: aDecoder)
